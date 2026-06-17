@@ -53,7 +53,7 @@ async def upload_tracks(
         cover_path = os.path.join(cover_dir, cover.filename)
         with open(cover_path, "wb") as buffer:
             shutil.copyfileobj(cover.file, buffer)
-        cover_url = f"http://127.0.0.1:8000/uploads/covers/{cover.filename}"
+        cover_url = f"https://auraspace-music-player.onrender.com/{cover.filename}"
 
     # 3. Create Metadata Record
     upload_time = datetime.now().strftime("%b %d, %Y - %I:%M %p")
@@ -61,7 +61,7 @@ async def upload_tracks(
         "id": audio.filename,
         "title": title,
         "artist": artist,
-        "url": f"http://127.0.0.1:8000/uploads/{audio.filename}",
+        "url": f"https://auraspace-music-player.onrender.com{audio.filename}",
         "cover_url": cover_url,
         "upload_time": upload_time
     }
