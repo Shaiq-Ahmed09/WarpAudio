@@ -8,6 +8,10 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 
 app = FastAPI(title="AuraStream Backend")
+@app.get("/")
+def health_check():
+    """Render uses this to check if the server is alive."""
+    return {"status": "AuraStream Backend is online and healthy!"}
 
 # Allow the frontend to communicate with the backend
 app.add_middleware(
