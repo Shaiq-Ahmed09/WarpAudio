@@ -10,10 +10,10 @@ import uvicorn
 from dotenv import load_dotenv
 
 load_dotenv()
-app = FastAPI(title="AuraStream Backend")
+app = FastAPI(title="WarpAudio Backend")
 @app.get("/")
 def serve_frontend():
-    """Serve the main AuraStream frontend."""
+    """Serve the main WarpAudio frontend."""
     return FileResponse("index.html")
 
 # Allow the frontend to communicate with the backend
