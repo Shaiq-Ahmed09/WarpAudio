@@ -5,13 +5,16 @@ from datetime import datetime
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 import uvicorn
+from dotenv import load_dotenv
 
+load_dotenv()
 app = FastAPI(title="AuraStream Backend")
 @app.get("/")
-def health_check():
-    """Render uses this to check if the server is alive."""
-    return {"status": "AuraStream Backend is online and healthy!"}
+def serve_frontend():
+    """Serve the main AuraStream frontend."""
+    return FileResponse("index.html")
 
 # Allow the frontend to communicate with the backend
 app.add_middleware(
@@ -88,6 +91,11 @@ def get_tracks():
         return {"tracks": tracks}
     except Exception:
         return {"tracks": []}
+
+@app.get("/api/config")
+def get_config():
+    """Returns frontend configuration like API keys from environment."""
+    return {"YOUTUBE_API_KEY": os.getenv("YOUTUBE_API_KEY", "")}
 
 if __name__ == "__main__":
     uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)
