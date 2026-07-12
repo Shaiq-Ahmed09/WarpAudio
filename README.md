@@ -1,11 +1,13 @@
-**🎵 WarpAudio**
+# 🎵 WarpAudio
 
 Bending Sound. Shaping Space.
 A sleek, highly customizable local music player that seamlessly bridges your offline library with YouTube's massive catalog.
 
 WarpAudio is built for absolute simplicity. No complicated setups, no heavy bloat—just drop your songs, customize the interface to match your exact vibe, and you are good to go.
 
-**✨ Features**
+---
+
+# ✨ Features
 
 Instant Local Streaming: Drag, drop, and play. Stream your local music library flawlessly with full persistent storage.
 
@@ -13,7 +15,9 @@ Total Customization: The player is completely modular and customizable by you—
 
 Hybrid Library: Combines your local files with the power of YouTube's search engine (see the API setup below!).
 
-**🛠️ Quick Start**
+---
+
+# 🛠️ Quick Start
 
 Getting WarpAudio up and running takes less than a minute.
 
@@ -31,7 +35,9 @@ http://127.0.0.1:8000
 
 Upload your favorite tracks or search the youtube catalog and start listening!
 
-**🔑 The Catch: Activating YouTube Search**
+---
+
+# 🔑 The Catch: Activating YouTube Search
 
 To protect environment integrity, the production YouTube API key is fully hidden and secured. To unlock streaming from YouTube's massive library directly inside WarpAudio, you just need to drop in your own free key.
 
@@ -44,7 +50,9 @@ Generate an API Key (it's completely free).
 
 Paste your key into your local configuration file (e.g., .env or config.py) to bridge your player to the cloud.
 
-**🎛️ Customization & Tech Stack**
+---
+
+# 🎛️ Customization & Tech Stack
 
 Frontend: Vanilla JS / modern CSS variables for effortless, deep theme customization.
 
