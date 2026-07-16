@@ -52,7 +52,7 @@ Paste your key into your local configuration file (e.g., .env or config.py) to b
 
 ---
 
-# 🎛️ Customization & Tech Stack
+# Customization & Tech Stack
 
 Frontend: Vanilla JS / modern CSS variables for effortless, deep theme customization.
 
