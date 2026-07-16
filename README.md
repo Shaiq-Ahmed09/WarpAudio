@@ -7,7 +7,7 @@ WarpAudio is built for absolute simplicity. No complicated setups, no heavy bloa
 
 ---
 
-# ✨ Features
+# Features
 
 Instant Local Streaming: Drag, drop, and play. Stream your local music library flawlessly with full persistent storage.
 
@@ -17,7 +17,7 @@ Hybrid Library: Combines your local files with the power of YouTube's search eng
 
 ---
 
-# 🛠️ Quick Start
+# Quick Start
 
 Getting WarpAudio up and running takes less than a minute.
 
