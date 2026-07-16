@@ -37,7 +37,7 @@ Upload your favorite tracks or search the youtube catalog and start listening!
 
 ---
 
-# 🔑 The Catch: Activating YouTube Search
+# The Catch: Activating YouTube Search
 
 To protect environment integrity, the production YouTube API key is fully hidden and secured. To unlock streaming from YouTube's massive library directly inside WarpAudio, you just need to drop in your own free key.
 
