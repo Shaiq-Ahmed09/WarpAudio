@@ -1,4 +1,4 @@
-# 🎵 WarpAudio
+# WarpAudio
 
 Bending Sound. Shaping Space.
 A sleek, highly customizable local music player that seamlessly bridges your offline library with YouTube's massive catalog.
