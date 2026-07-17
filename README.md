@@ -24,14 +24,16 @@ Getting WarpAudio up and running takes less than a minute.
 Launch the Backend:
 Run the Python development server to initialize the audio engine and persistent storage:
 
-Bash
+```
 python server.py
+```
 
 Access the Player:
 Open your browser and navigate to:
 
-Code snippet
+```
 http://127.0.0.1:8000
+```
 
 Upload your favorite tracks or search the youtube catalog and start listening!
 
